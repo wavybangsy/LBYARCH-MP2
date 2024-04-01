@@ -54,7 +54,6 @@ void c_stencil(int n, double *X, double *Y){
 int main(){
 
     // get input n from user
-    int num;
     const int sizes[] = {1048576, 16777216, 268435456};
     const int num_sizes = sizeof(sizes) / sizeof(int);
     int num_runs = 35;
@@ -64,8 +63,8 @@ int main(){
         int n = sizes[size];
         printf("Vector size: %d\n\n", n);
     
-        double* Y = malloc(num * sizeof(double)); 
-        double* X = malloc(num * sizeof(double)); 
+        double* Y = malloc(n * sizeof(double)); 
+        double* X = malloc(n * sizeof(double)); 
 
         if (Y == NULL || X == NULL) {
             printf("Memory allocation failed.\n");
@@ -73,14 +72,14 @@ int main(){
         }
 
         // initialize X array to store 1 to num
-        for (int count = 0; count < num; count++){
+        for (int count = 0; count < n; count++){
             X[count] = count + 1;
         }
 
         // call c kernel
         clock_t start_time = clock();
         for (int i = 0; i < num_runs; i++) {
-            c_stencil(num, X, Y);
+            c_stencil(n, X, Y);
         }
         clock_t end_time = clock();
         double c_elapsed_time = ((double)(end_time - start_time)) / CLOCKS_PER_SEC / num_runs;
@@ -101,7 +100,7 @@ int main(){
         // double c_elapsed_time = ((double)(end_time - start_time)) / CLOCKS_PER_SEC / num_runs;
         // printf("Assembly Kernel: Average time taken: %f seconds\n", c_elapsed_time);
 
-        print_c_result(Y, num);
+        print_c_result(Y, n);
         printf("==============================================================\n");
 
         free(Y);
