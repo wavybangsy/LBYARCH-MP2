@@ -5,9 +5,9 @@ This program implements a kernel in C program and x86-64 assembly language that 
 ## Release Mode
 | Vector Size  | C runtime | x86-64 Assembly runtime | Remarks
 | ------------- | ------------- | ------------- | ------------- |
-| 2^20  | 0.162800s  | 0.045257s | Assembly was faster by 0.117543s |
-| 2^24  | 2.650286s  | 0.234514s | Assembly was faster by 2.415772s |
-| 2^27  | 13.868200s  | 3.083600s | Assembly was faster by 10.7846s |
+| 2^20  | 0.059971s  | 0.020886s | Assembly was faster by 0.039085s |
+| 2^24  | 1.099657s  | 0.176171s | Assembly was faster by 0.923486s |
+| 2^27  | 8.088571s  | 1.204257s | Assembly was faster by 6.884314s |
 
 ## Debug Mode
 | Vector Size  | C runtime | x86-64 Assembly runtime | Remarks
