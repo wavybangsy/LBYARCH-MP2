@@ -12,9 +12,9 @@ This program implements a kernel in C program and x86-64 assembly language that 
 ## Debug Mode
 | Vector Size  | C runtime | x86-64 Assembly runtime | Remarks
 | ------------- | ------------- | ------------- | ------------- |
-| 2^20  | 0.068114s  | 0.018029s | Assembly was faster by 0.1688s |
-| 2^24  | 0.839886s  | 0.154057s | Assembly was faster by 1.7466s |
-| 2^27  | 6.911629s  | 1.085429s | Assembly was faster by 8.691429s |
+| 2^20  | 0.068114s  | 0.018029s | Assembly was faster by 0.050085s |
+| 2^24  | 0.839886s  | 0.154057s | Assembly was faster by 0.685829s |
+| 2^27  | 6.911629s  | 1.085429s | Assembly was faster by 5.8262s |
 
 # Observation
 Lorem ipsum
