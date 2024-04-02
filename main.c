@@ -1,3 +1,5 @@
+// Submitted by: Mary Erika Culala & Gleezell Uy 
+// Section: S17
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
