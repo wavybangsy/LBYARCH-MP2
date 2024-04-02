@@ -23,7 +23,5 @@ Lorem ipsum
 The following figure shows a successful run of the project in both debug mode and release mode. The respective vector sizes used are displayed together with a side-by-side comparison of the results after programming the given task in both the C and x86-64 assembly languages. 
 
 # Developers
-S17 
-Mary Erika Culala
-Gleezell Vina Uy
+(S17) Mary Erika Culala & Gleezell Vina Uy
 
