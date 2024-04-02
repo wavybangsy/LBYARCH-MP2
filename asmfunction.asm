@@ -1,5 +1,7 @@
+; S17 Mary Erika Culala & Gleezell Vina Uy
 ; assembly part using x86-64
 section .data
+ZERO dq 0.0
 
 section .text
 bits 64
@@ -7,10 +9,9 @@ default rel ; to handle address relocation
 global asmhello
 
 asmhello:
-	XOR RAX, RAX
-	SUB R12, RDX
 
-	MOV R10, 0					;  loop counter						
+	MOV R10, 0					;  x index counter	
+	MOV R12, 0					;  y index counter
 
 CHECK1:
 	MOV RAX, -3
@@ -22,33 +23,34 @@ CHECK1:
 	JMP CHECK1
 
 CHECK2:
-	MOV RBX, 3
-	ADD RBX, R10
-	CMP RBX, R12				;compare index to n (xmm1)
+	MOV RAX, 3
+	ADD RAX, R10
+	CMP RAX, RCX
 	JL FUNC
 	JMP END
 
 FUNC:
-	MOV RAX, -3					; -3 to 3
-	MOV R15, 0					; index of Y
-
-	MOV R14, R10				;backup index of pumasang index
-	ADD R14, RAX				;index + looper of inner loop (-3 to 3)
-	MOVSD XMM0, [RCX + R14*8]   ; current element based on index
-	ADDSD XMM7, XMM0				; compile sum
+	MOV R11, R10				; Store the Index
+	MOV RAX, -3
+	movsd xmm2, [ZERO]			; initialize sum to 0
+	ADD R11, RAX
 
 
+ADD:
+	addsd xmm2, [RDX + R11*8]
+	INC R11
 	INC RAX
 	CMP RAX, 4
-	JE StoreY     ;print
-	JMP FUNC
-
-
-StoreY:
-	MOVSD [R8 + R15*8], XMM7		; mov current element to Y
-	INC R15
+	JNE ADD
+	movsd [R8 + R12*8], xmm2
+	INC R12
+	INC R10
 	JMP CHECK1
 
 END: 
-	NOP 
+	MOV [R9], R12
+	NOP
+	; movsd xmm0, [RDX + 0*8]
+    ; addsd xmm0, [RDX + 1*8]
+    ; movsd [R8 + 0*8], xmm0
 	RET

@@ -1,5 +1,5 @@
-// Submitted by: Mary Erika Culala & Gleezell Uy 
-// Section: S17
+// S17 Mary Erika Culala & Gleezell Vina Uy
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
