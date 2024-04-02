@@ -24,6 +24,8 @@ The following figures demonstrate a successful run of the project in both debug 
 
 ## Debug Mode
 
+<img width="1097" alt="debug2" src="https://github.com/wavybangsy/LBYARCH-MP2/assets/76273496/8982d8d0-7fd9-4389-9166-e343356a5dd7">
+
 ## Release Mode
 ![Release_Screenshot](https://github.com/wavybangsy/LBYARCH-MP2/assets/26676907/209987c7-7ddc-45c2-b6ee-0b34f3525391)
 
