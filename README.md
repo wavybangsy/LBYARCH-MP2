@@ -25,6 +25,7 @@ The following figures demonstrate a successful run of the project in both debug 
 ## Debug Mode
 
 ## Release Mode
+![Release_Screenshot](https://github.com/wavybangsy/LBYARCH-MP2/assets/26676907/209987c7-7ddc-45c2-b6ee-0b34f3525391)
 
 # Developers
 (S17) Mary Erika Culala & Gleezell Vina Uy
