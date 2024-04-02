@@ -26,10 +26,11 @@ Moreover, the recorded runtime of the release mode table, as shown in the table 
 The following figures demonstrate a successful run of the project in both debug mode and release mode. The respective vector sizes used are displayed together with a side-by-side comparison of the results after programming the given task in both the C and x86-64 assembly languages. 
 
 ## Debug Mode
+
 ![image](https://github.com/wavybangsy/LBYARCH-MP2/assets/26676907/42f49348-341d-418a-8b2a-48a3cd997640)
 
 ## Release Mode
-![Release_Screenshot](https://github.com/wavybangsy/LBYARCH-MP2/assets/26676907/209987c7-7ddc-45c2-b6ee-0b34f3525391)
+![release2](https://github.com/wavybangsy/LBYARCH-MP2/assets/76273496/b238fed9-51c4-4829-a133-1a3d43c156aa)
 
 # Developers
 (S17) Mary Erika Culala & Gleezell Vina Uy
