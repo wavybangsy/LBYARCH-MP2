@@ -1,0 +1,12 @@
+﻿  main.c
+C:\Users\Erika\source\repos\LBYARCHMP2Ver\main.c(113,32): warning C4047: 'function': 'int *' differs in levels of indirection from 'int **'
+C:\Users\Erika\source\repos\LBYARCHMP2Ver\main.c(113,32): warning C4024: 'c_stencil': different types for formal and actual parameter 4
+C:\Users\Erika\source\repos\LBYARCHMP2Ver\main.c(120,25): warning C4047: 'function': 'int' differs in levels of indirection from 'int *'
+C:\Users\Erika\source\repos\LBYARCHMP2Ver\main.c(120,25): warning C4024: 'print_result': different types for formal and actual parameter 2
+C:\Users\Erika\source\repos\LBYARCHMP2Ver\main.c(130,31): warning C4047: 'function': 'int *' differs in levels of indirection from 'int **'
+C:\Users\Erika\source\repos\LBYARCHMP2Ver\main.c(130,31): warning C4024: 'asmhello': different types for formal and actual parameter 4
+C:\Users\Erika\source\repos\LBYARCHMP2Ver\main.c(137,25): warning C4047: 'function': 'int' differs in levels of indirection from 'int *'
+C:\Users\Erika\source\repos\LBYARCHMP2Ver\main.c(137,25): warning C4024: 'print_result': different types for formal and actual parameter 2
+C:\Users\Erika\source\repos\LBYARCHMP2Ver\main.c(121,13): warning C4047: 'initializing': 'int' differs in levels of indirection from 'int *'
+C:\Users\Erika\source\repos\LBYARCHMP2Ver\main.c(138,13): warning C4047: 'initializing': 'int' differs in levels of indirection from 'int *'
+  LBYARCHMP2Ver.vcxproj -> C:\Users\Erika\source\repos\LBYARCHMP2Ver\x64\Debug\LBYARCHMP2Ver.exe
